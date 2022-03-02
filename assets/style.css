@@ -103,7 +103,7 @@ ul {
     list-style-type: none;  
     justify-content: space-evenly;
     padding: 6px;
-    margin: 2px;  
+    margin: 0;  
 }
 
 /* padding to list items to increase clickable area */
