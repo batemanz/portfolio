@@ -10,7 +10,7 @@ only location font has been set */
 sets the max width of the body so the contents only expand so far
 sets margin so once max width has been reached content stays center */
 body {
-    background-color: #2f3640;
+    background-image: linear-gradient(#353b48, #192a56);
     color:#f5f6fa;
     max-width: 1440px;
     margin: 0 auto;
@@ -47,7 +47,7 @@ main{
 flex diretion column to make items vertical
 space-between to keep the images seperated farthest apart */
 aside {
-    background-color: #71809360;
+    background-image: linear-gradient(#71809360, #7f8fa660);
     border: 8px solid #7f8fa680;
     display: flex;
     flex-direction: column;
@@ -126,11 +126,16 @@ a circle */
     max-width: 25%;
 }
 
+.navFlex{
+    display: flex;
+}
+
 /* sets the width of bottom UL to 100% to cross the enitre container
 removes border on right side to make the border match from thebox above match better */
 #btm-nav {
     width: 100%; 
     border-right: 0;
+    align-items: center;
 }
 
 /* container around .card displays flex, flex wraps and moves cards to center */
@@ -152,7 +157,8 @@ removes border on right side to make the border match from thebox above match be
 .text-block {
     position: absolute;
     bottom: 20%;
-    width: 80%;
+    width: fit-content;
+    min-width: 200px;
     background-color: #00000090;
     border-radius: 80px;
     color: white;
@@ -181,7 +187,12 @@ objext-fit: cover added to keep image the size of containing element */
 
 /* sets the width of main photo to make it more prominent than the rest */
 #work {
-    width: 75%;
+    width: 68%;
+}
+
+.logo {
+    max-width: 150px;
+    max-height: 40px;
 }
 
 /* centers text sets colors border padding and radius */
