@@ -1,257 +1,263 @@
 /* global settings box sizing and font family has been set here, this is the 
 only location font has been set */
 * {
-    box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
 
 /* sets the background color of the body and the color of the text on the page
 sets the max width of the body so the contents only expand so far
 sets margin so once max width has been reached content stays center */
 body {
-    background-image: linear-gradient(#353b48, #192a56);
-    color:#f5f6fa;
-    max-width: 1440px;
-    margin: 0 auto;
+  background-image: linear-gradient(#353b48, #192a56);
+  color: #f5f6fa;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /* adds background leaf image to header, sets parameters for padding/border/radius
  header displays flex contents aligned to left side, 
 flex wrap so name goes under pic, aligned to end so name is at bottom*/
 header {
-    background-image:url("./images/leaf.jpg");
-    padding: 18px;
-    border: 8px solid #44bd3240;
-    border-radius: 20px 20px 0 0;
-    display: flex;
-    justify-content:left;
-    align-items: flex-end;
-    flex-wrap: wrap;
+  background-image: url("./images/leaf.jpg");
+  padding: 18px;
+  border: 8px solid #44bd3240;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 /*nav bar background and border settings */
-nav, #btm-nav {
-    background-color: #40739e60;
-    border: 8px solid #487eb080;
-    padding: 2px;
+nav,
+#btm-nav {
+  background-color: #40739e60;
+  border: 8px solid #487eb080;
+  padding: 2px;
 }
 
 /* not exactly sure whats going on here but it works lol
 keeps the aside to the left of the screen beside the main-content */
-main{
-    display: flex;
-} 
+main {
+  display: flex;
+}
 
 /* side bar bckgrnd color and border settings
 flex diretion column to make items vertical
 space-between to keep the images seperated farthest apart */
 aside {
-    background-image: linear-gradient(#71809360, #7f8fa660);
-    border: 8px solid #7f8fa680;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  background-image: linear-gradient(#71809360, #7f8fa660);
+  border: 8px solid #7f8fa680;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* sets the border on the right side to 
 match the nav bar */
 #main-content {
-    border-right: 8px solid #487eb099;
+  border-right: 8px solid #487eb099;
 }
 
 /* text is aligned to center inside the text-block
 margin to top of section (.card) set */
 section {
-    margin-top: 4px;
-    text-align: center;
+  margin-top: 4px;
+  text-align: center;
 }
 
 /* sets font size of P,
 padding margin and text align center */
 p {
-    font-size: 28px;
-    padding: 24px;
-    margin: 10px;
-    text-align: center;
-    background-color: #fbc53130;
+  font-size: 28px;
+  padding: 24px;
+  margin: 10px;
+  text-align: center;
+  background-color: #fbc53130;
 }
 
 /* increases size of h1 elements */
 h1 {
-    font-size: 300%;
+  font-size: 300%;
 }
 
 /* adds padding to h2 elements */
 h2 {
-    padding: 12px 20px;
+  padding: 12px 20px;
 }
 
 /* adds margin to h3 elements */
 h3 {
-    margin: 2px;
+  margin: 2px;
 }
 
 /* adds a top and bottom padding of 12px on h3 elements inside of card class */
 .card h3 {
-    padding: 12px 0;
+  padding: 12px 0;
 }
 /* removes bullet points from List items. justify content spaces the list items evenly apart,
  */
 ul {
-    display: flex;
-    list-style-type: none;  
-    justify-content: space-evenly;
-    padding: 6px;
-    margin: 0;  
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  padding: 6px;
+  margin: 0;
 }
 
 /* padding to list items to increase clickable area */
 li {
-    padding: 8px;
+  padding: 8px;
 }
-
 
 /* removes the underline from the links and changes the color of link txt */
 a {
-    text-decoration: none;
-    padding: 6px;
-    color:#f5f6fa;
+  text-decoration: none;
+  padding: 6px;
+  color: #f5f6fa;
 }
 
 /* sets width of profile photo to max of 25% of original size (1x1 original aspect) and border radius to make image
 a circle */
-#profile    {
-    border-radius: 100%;
-    max-width: 25%;
+#profile {
+  border-radius: 100%;
+  max-width: 25%;
 }
 
-.navFlex{
-    display: flex;
+.navFlex {
+  display: flex;
 }
 
 /* sets the width of bottom UL to 100% to cross the enitre container
 removes border on right side to make the border match from thebox above match better */
 #btm-nav {
-    width: 100%; 
-    border-right: 0;
-    align-items: center;
+  width: 100%;
+  border-right: 0;
+  align-items: center;
 }
 
 /* container around .card displays flex, flex wraps and moves cards to center */
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;   
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-  /* Container holding the image and the text
+/* Container holding the image and the text
   sets img size to 33%*/
-  .card {
-    position: relative;
-    width: 33%;
-    margin: 4px 2px; 
+.card {
+  position: relative;
+  width: 33%;
+  margin: 4px 2px;
 }
+
 
 /* moves the text block so it is placed in the middle of image, and styling */
 .text-block {
-    position: absolute;
-    bottom: 20%;
-    width: fit-content;
-    min-width: 200px;
-    background-color: #00000090;
-    border-radius: 80px;
-    color: white;
-    padding: 8px;
+  position: absolute;
+  bottom: 20%;
+  width: fit-content;
+  min-width: 200px;
+  background-color: #00000090;
+  border-radius: 80px;
+  color: white;
+  padding: 8px;
 }
 
 /* every img in class card sets lower opacity so when the hover happens we can go to 100% sets other stylings for img. box shadow.
 objext-fit: cover added to keep image the size of containing element */
 .card img {
-    opacity: 60%;
-    border-radius: 150px;
-    margin: 6px;
-    border: 4px solid #00a8ff98;
-    box-shadow: 8px 8px 10px #000000;
-    object-fit: cover;
-    width: 100%;
+  opacity: 60%;
+  border-radius: 150px;
+  margin: 6px;
+  border: 4px solid #00a8ff98;
+  box-shadow: 8px 8px 10px #000000;
+  object-fit: cover;
+  width: 100%;
 }
 
 /* displays flex so the text-block can be centered */
 .card-content-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* sets the width of main photo to make it more prominent than the rest */
 #work {
-    width: 68%;
+  width: 68%;
 }
 
 .logo {
-    max-width: 150px;
-    max-height: 40px;
+  max-width: 150px;
+  max-height: 40px;
 }
 
+  #btm-nav li {
+    transition: transform 0.5s;
+  }
+
+  #btm-nav li:hover {
+    transform: rotate(360deg);
+}
 /* centers text sets colors border padding and radius */
 footer {
-    text-align: center;
-    background-color: #44bd3230;
-    border: 8px solid #44bd3240;
-    padding:2px 4px 4px 4px;
-    border-radius: 0 0 20px 20px;
+  text-align: center;
+  background-color: #44bd3230;
+  border: 8px solid #44bd3240;
+  padding: 2px 4px 4px 4px;
+  border-radius: 0 0 20px 20px;
 }
 
 /* once the view port becomes smaller than specified the cards display 3 in a row once they fit */
 @media screen and (max-width: 992px) {
-    .card {
-        width: 33%;
-    }   
+  .card {
+    width: 33%;
+  }
 }
 
 /* once the view port becomes smaller than specified the lists on the top and bottom of page change direction to column and centered
 and the card class and the img with id work is set to 100% width  */
 @media screen and (max-width: 768px) {
-    ul {
-        flex-direction: column;
-        align-items: center;
-    }
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    li {
-        margin: 4px;
-    }
+  li {
+    margin: 4px;
+  }
 
-    .card {
-      width: 100%;
-    }
+  .card {
+    width: 100%;
+  }
 
-    #work {
-        width: 100%;
-    }
+  #work {
+    width: 100%;
+  }
 }
 
 /* once the viewport becomes smaller than specified the aside 
 is removed from view 
 main content is given a left border to match the right now that aside is gone */
 @media screen and (max-width: 600px) {
-    aside {
-        display: none;
-    }
+  aside {
+    display: none;
+  }
 
-    #main-content {
-        border-left: 8px solid #487eb099;
-    }
+  #main-content {
+    border-left: 8px solid #487eb099;
+  }
 }
 
 /* when cursor hovers over the cards opacity is brought to 100% */
 .card:hover img {
-    opacity: 100%;
+  opacity: 100%;
 }
 
 /* when hovering over a list item a highlet affect happens by applying a background */
-li:hover {
-    background-color: #2f3640;
+#top-nav li:hover {
+  background-color: #2f3640;
 }
-
